@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let sout;
+    sout="<table>";
+    for (let i=0;i<7;i++){
+        sout=sout+"<tr>";
+        for(let j=0;j<16;j++){
+            if(i>0&&i<6&&j>0&&j<15){
+                sout=sout+"<td>"+" "+"</td>";
+            }else {
+                sout=sout+"<td>"+"*"+"</td>";
+            }
+        }
+        sout=sout+"</tr>";
+    }
+    sout=sout+"</table>";
+    document.write(sout);
+</script>
+</body>
+</html>

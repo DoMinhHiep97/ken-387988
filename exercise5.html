@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let money=parseFloat(prompt("Số tiền gốc cho vay là:"));
+    const a=money;
+    let month=parseInt(prompt("Số tháng cho vay là:"));
+    let rate=parseFloat(prompt("Lãi suất hàng tháng là:"));
+    for(let i=0;i<month;i++){
+    money=money+money*rate;
+    }
+    document.write("Cả gốc lẫn lãi là:"+money);
+let b=money-a;
+document.write(";Lãi là:"+b);
+
+</script>
+</body>
+</html>
